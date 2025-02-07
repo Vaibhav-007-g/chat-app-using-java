@@ -1,0 +1,10 @@
+CREATE DATABASE ChatApp;
+
+USE ChatApp;
+
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sender VARCHAR(50),
+    message TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
